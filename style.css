@@ -121,3 +121,17 @@ h1 {
     display: block;
     object-fit: cover;
   }
+
+  /* 
+  ===========================
+  Products
+  ===========================
+  */
+
+  .products {
+    width: var(--fluid-width);
+    display: grid;
+    grid-gap: 1rem;
+    margin: 4rem auto;
+    max-width: var(--max-width);
+  }
