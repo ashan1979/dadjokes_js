@@ -163,3 +163,13 @@ h1 {
     transition: var(--transition);
     font-size: 0.85rem;
   }
+
+  .company-btn:hover {
+    color: var(--grey-700);
+  }
+
+  .product {
+    margin-bottom: 1rem;
+  }
+
+  
