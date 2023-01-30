@@ -172,4 +172,14 @@ h1 {
     margin-bottom: 1rem;
   }
 
+  .product-img {
+    border-radius: var(--borderRadius);
+    height: 15rem;
+  }
+
+  .product footer {
+    padding: 0.75rem;
+    text-align: center;
+  }
+
   
