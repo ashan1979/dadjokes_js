@@ -149,3 +149,17 @@ h1 {
     border-color: transparent;
     letter-spacing: var(--letterSpacing);
   }
+
+  .company-btn {
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    background: transparent;
+    border-color: transparent;
+    letter-spacing: var(--letterSpacing);
+    color: var(--grey-500);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.85rem;
+  }
