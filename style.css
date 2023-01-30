@@ -196,3 +196,35 @@ h1 {
     font-size: 1rem;
     letter-spacing: var(--letterSpacing);
   }
+
+  @media screen and (min-width: 768px) {
+    .products {
+      grid-template-columns: 200px 1fr;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .products-container .product-img {
+      height: 10rem;
+    }
+    .products-container .product-name {
+      font-size: 0.85rem;
+    }
+    .products-container .product-price {
+      font-size: 0.85rem;
+    }
+    .product {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    .products-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
