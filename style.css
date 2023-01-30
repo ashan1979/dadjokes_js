@@ -182,4 +182,9 @@ h1 {
     text-align: center;
   }
 
-  
+  .product-name {
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    color: var(--grey-500);
+  }
