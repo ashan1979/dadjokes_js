@@ -188,3 +188,11 @@ h1 {
     letter-spacing: var(--letterSpacing);
     color: var(--grey-500);
   }
+
+  .product-price {
+    margin-bottom: 0;
+    color: var(--grey-700);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: var(--letterSpacing);
+  }
