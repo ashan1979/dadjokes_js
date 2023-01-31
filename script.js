@@ -7,4 +7,15 @@ const displayProducts = () => {
         productsContainer.innerHTML = `<h6>Sorry, No Products Matched Your Search</h6>`
         return;
     }
+
+    productsContainer.innerHTML = filteredProducts.map(product) => {
+        const { id, title, image, price } =  product;
+        return `<article class="product" data-id="${id}">
+            <img src="${image}"
+            class="product-img img"
+            alt=""/>
+            <footer>
+                <h5 class="">
+            `
+    }
 }
