@@ -36,4 +36,5 @@ form.addEventListener('keyup', () => {
     filteredProducts = products.filter((product) => {
         return product.title.toLowerCase().includes(inputValue);
     });
+    displayProducts();
 })
