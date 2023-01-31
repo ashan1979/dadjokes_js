@@ -47,3 +47,12 @@ form.addEventListener('keyup', () => {
 
 //Filter Buttons
 
+const companiesDOM = document.querySelector('.companies');
+
+const diplayButtons = () => {
+    const buttons = [
+        'all',
+        ...new Set(products.map((product) => product.company)),
+    ];
+    console.log(buttons);
+}
