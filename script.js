@@ -38,3 +38,12 @@ form.addEventListener('keyup', () => {
     });
     displayProducts();
 })
+
+//console.log(
+//    products.filter((product) => {
+//        return product.title.toLowerCase().includes('');
+//    })
+//);
+
+//Filter Buttons
+
