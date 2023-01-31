@@ -55,4 +55,9 @@ const diplayButtons = () => {
         ...new Set(products.map((product) => product.company)),
     ];
     console.log(buttons);
-}
+    companiesDOM.innerHTML = buttons
+    .map((company) => {
+        return `<button class="company-btn" data-id="${company}">${company}</button>`
+    })
+    .join('');
+};
