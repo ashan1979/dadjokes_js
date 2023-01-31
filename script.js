@@ -9,8 +9,13 @@ const displayProducts = () => {
     }
 
     productsContainer.innerHTML = filteredProducts.map((product) => {
-        const { id, title, image, price } =  product;
-        return `<article class="product" data-id="${id}">
+            const {
+                id,
+                title,
+                image,
+                price
+            } = product;
+            return `<article class="product" data-id="${id}">
                 <img src="${image}"
                 class="product-img img"
                 alt=""/>
@@ -20,8 +25,8 @@ const displayProducts = () => {
                 </footer>
                 </article>`;
 
-    })
-    .join('');
+        })
+        .join('');
 };
 
 displayProducts();
@@ -49,20 +54,20 @@ form.addEventListener('keyup', () => {
 
 const companiesDOM = document.querySelector('.companies');
 
-const diplayButtons = () => {
+const displayButtons = () => {
     const buttons = [
         'all',
         ...new Set(products.map((product) => product.company)),
     ];
     console.log(buttons);
     companiesDOM.innerHTML = buttons
-    .map((company) => {
-        return `<button class="company-btn" data-id="${company}">${company}</button>`
-    })
-    .join('');
+        .map((company) => {
+            return `<button class="company-btn" data-id="${company}">${company}</button>`
+        })
+        .join('');
 };
 
-diplayButtons();
+displayButtons();
 
 companiesDOM.addEventListener('click', (e) => {
     const el = e.target;
